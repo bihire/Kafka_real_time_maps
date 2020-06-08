@@ -19,7 +19,7 @@ def generate_uuid():
 # Kafaka producer
 client = KafkaClient(hosts="localhost:9092")
 
-topic = client.topics['test_kafka2']
+topic = client.topics['bus-lines']
 producer = topic.get_sync_producer()
 
 

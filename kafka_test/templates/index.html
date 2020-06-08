@@ -32,7 +32,7 @@
             mapmarkers2 = []
             mapmarkers3 = []
 
-            var source = new EventSource('/topic/test_kafka2');
+            var source = new EventSource('/topic/bus-lines');
             source.addEventListener('message', function(e) {
                 console.log('message');
                 obj = JSON.parse(e.data)
